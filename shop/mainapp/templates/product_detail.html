@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% url 'base' %}">Вернуться на главную</a></li>
+<!--    <li class="breadcrumb-item"><a href="#">Library</a></li>-->
+<!--    <li class="breadcrumb-item active" aria-current="page">Data</li>-->
+  </ol>
+</nav>
+<div class="row">
+
+    <div class="col-md-20">
+        <h3>{{ product.tittle }}</h3>
+        <p>{{ product.description }}</p>
+    </div>
+   </div>
+    <div class="col-md-20">
+        <img src="{{ product.image.url }}" class="img-fluid">
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+
+

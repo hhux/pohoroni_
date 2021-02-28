@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Business Frontpage - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+
+</head>
+<style>
+    body {
+    padding-top:56px;
+    }
+</style>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'base' %}">Главная</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Информация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-dark py-2 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Ритуал</h1>
+          <p class="lead mb-4 text-white-50">Агентство Ритуал оказывает ритуальные услуги три тысячи лет</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>Предоставляемые услуги</h2>
+        <hr>
+        <p>Агенство Ритуал предоставляет полный спектр ритуальных услуг. Если вам нужна какая-либо консультация - звоните по номеру: <strong>228-322-0</strong> и наши квалифицированные сотрудники ответят на все ваши вопросы.</p>
+        <p>Наш консультант подскажет дальнейшие действия, назначит время встречи и возьмет на себя важные вопросы.</p>
+        <a class="btn btn-success btn-lg" href="#">Заказать обратный звонок</a>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Контакты</h2>
+        <hr>
+        <address>
+          <strong>
+            <br>Адрес:
+            <br>
+          <br>Новосибирск
+          <br>Пушкина-Колотушкина 27а
+            <br>
+          <br>Телефон:
+          <br>228-322-0
+          </strong>
+        </address>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+      {% block content%}
+      <div class="col-md-6 mb-5">
+
+        <div class="card h-100">
+          <img class="card-img-top" src="https://sun9-32.userapi.com/impg/m23BM1ssJrzL_BvziBe7fbuFcsPeGLWx8pSReQ/aC4eWj6oj2Q.jpg?size=640x480&quality=96&sign=1d235ec76968783c2f666bc94b7d910f&type=album" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Захоронение</h4>
+            <p class="card-text">Смерть близкого человека всегда застает врасплох. Наши специалисты помогут справиться в трудную минуту и возьмут на себя решение множество проблем и вопросов, связанных с организацией похорон.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:8000/products/urn/grave_urn/" class="btn btn-success">Узнать подробнее</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-5">
+
+        <div class="card h-100">
+          <img class="card-img-top" src="https://sun9-61.userapi.com/impg/sWzd25bYx3Z7S04VKBlmeTIDCyPWYSHpusvwDw/adudZWLvLDQ.jpg?size=700x515&quality=96&sign=002f30c71c236167fcae21387d0a1015&type=album" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Благоустройство</h4>
+            <p class="card-text">За местом захоронения близкого человека необходимо регулярно ухаживать, т.к. почва склонна к размыванию, а сорные растения имеют свойство разрастаться. Однако, не всегда близкие усопшего имеют возможность часто посещать могилку. Наши квалифицированные специалисты возьмут на себя ответственность по уходу и благоустройству захоронения.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:8000/products/coffin/coffins/" class="btn btn-success">Узнать подробнее</a>
+          </div>
+        </div>
+        {% endblock content %}
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
