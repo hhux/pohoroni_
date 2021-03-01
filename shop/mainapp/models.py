@@ -126,6 +126,19 @@ class Urn(Product):
         return get_product_url(self, 'product_detail')
 
 
+class Info(Product):
+    """"Информация"""
+    size = models.CharField(max_length=255, verbose_name='Размер')
+    material = models.CharField(max_length=255, verbose_name='Материал')
+    coffin_form = models.CharField(max_length=255, verbose_name='Форма')
+
+    def __str__(self):
+        return "{} : {}".format(self.category.name, self.title)
+
+    def get_absolute_url(self):
+        return get_product_url(self, 'product_detail')
+
+
 class CartProduct(models.Model):
 
     user = models.ForeignKey('Customer', verbose_name='Покупатель', on_delete=models.CASCADE)

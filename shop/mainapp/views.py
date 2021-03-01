@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import DeleteView
-
-from .models import Coffin, Urn
+from django import forms
+from .models import Coffin, Urn, Info
 
 
 def test_view(request):
@@ -10,9 +10,11 @@ def test_view(request):
 
 class ProductDetailView(DeleteView):
     """"Дать урлы товарам"""
+
     CT_MODEL_MODEL_CLASS = {
         'coffin': Coffin,
-        'urn': Urn
+        'urn': Urn,
+        'info': Info
     }
 
     def dispatch(self, request, *args, **kwargs):
@@ -25,3 +27,12 @@ class ProductDetailView(DeleteView):
     context_object_name = 'product'
     template_name = 'product_detail.html'
     slug_url_kwarg = 'slug'
+
+
+class ContactForm(forms.Form):
+    """Форма обратной связи"""
+
+    subject = forms.CharField(max_length = 100)
+    sender = forms.EmailField()
+    message = forms.CharField()
+    copy = forms.BooleanField(required = False)
