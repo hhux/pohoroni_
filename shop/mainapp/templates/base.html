@@ -69,7 +69,24 @@
         <hr>
         <p>Ритуальная служба «Вечность» предоставляет полный спектр ритуальных услуг. Если вам нужна какая-либо консультация - звоните по номеру <strong>8-923-117-01-01</strong> и наши квалифицированные сотрудники ответят на все ваши вопросы.</p>
         <p>Наш консультант подскажет порядок действий, назначит время встречи и возьмет на себя все важные вопросы.</p>
-        <a class="btn btn-success btn-lg" href="#">Заказать обратный звонок</a>
+
+        <!-- FeedBackForm -->
+
+          <form action="{% url 'feedback_view' %}" method="POST">
+            {% csrf_token %}
+            <label class="form-label">Ваше имя</label>
+            <input name="name" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Введите ваше имя">
+            <div class="mb-3">
+    <label class="form-label">Номер телефона</label>
+    <input name="phone" type="text" class="form-control" id=exampleInputPassword1" pattern="\d\d\d\d\d\d\d\d\d\d" placeholder="##########"/>
+  </div>
+  <div class="mb-3 form-check">
+  </div>
+  <button type="submit" class="btn btn-success btn-lg">Заказать обратный звонок</button>
+
+
+
+<!-- Contacts -->
       </div>
       <div class="col-md-4 mb-5">
         <h2>Контакты</h2>
