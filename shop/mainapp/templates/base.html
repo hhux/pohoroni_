@@ -83,7 +83,13 @@
   <div class="mb-3 form-check">
   </div>
   <button type="submit" class="btn btn-success btn-lg">Заказать обратный звонок</button>
-
+    {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-success" role="alert">
+                <p class="reviews">{{ message }}</p>
+              </div>
+            {% endfor %}
+    {% endif %}
 
 
 <!-- Contacts -->

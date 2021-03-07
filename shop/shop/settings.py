@@ -128,3 +128,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static_dev'),
 )
+
+
+MY_INFO = 80
+MESSAGE_LEVEL = MY_INFO
