@@ -63,4 +63,6 @@ admin.site.register(Urn, UrnAdmin)
 admin.site.register(CartProduct)
 admin.site.register(Cart)
 admin.site.register(Customer)
-admin.site.register(Info)
+admin.site.register(Info, InfoAdmin)
+
+""""1"""

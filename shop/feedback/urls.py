@@ -4,3 +4,6 @@ from .views import FeedBackView
 urlpatterns = [
     path('', FeedBackView.as_view(), name='feedback_view')
 ]
+
+
+""""1"""

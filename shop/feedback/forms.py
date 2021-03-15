@@ -7,3 +7,6 @@ class FeedBackForm(forms.ModelForm):
     class Meta:
         model = FeedBack
         fields = ['name', 'phone']
+
+
+""""1"""

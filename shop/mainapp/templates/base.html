@@ -37,7 +37,7 @@
           </li>
           {% block content_1 %}
           <li class="nav-item">
-            <a class="nav-link" href="http://127.0.0.1:8000/products/urn/info">Информация</a>
+            <a class="nav-link" href="http://127.0.0.1:8000/info/">Информация</a>
             {% endblock content_1 %}
           </li>
           <li class="nav-item">
@@ -93,7 +93,7 @@
 
 
 <!-- Contacts -->
-      </div>
+    </div>
       <div class="col-md-4 mb-5">
         <h2>Контакты</h2>
         <hr>
@@ -114,71 +114,67 @@
 
     <div class="row">
       {% block content%}
-      <div class="col-md-6 mb-5">
-
+      <!-- Content Row -->
+    <div class="row">
+      <div class="col-md-4 mb-5">
         <div class="card h-100">
           <img class="card-img-top" src="https://sun9-32.userapi.com/impg/m23BM1ssJrzL_BvziBe7fbuFcsPeGLWx8pSReQ/aC4eWj6oj2Q.jpg?size=640x480&quality=96&sign=1d235ec76968783c2f666bc94b7d910f&type=album" alt="">
           <div class="card-body">
-            <h4 class="card-title">Захоронение</h4>
-            <p class="card-text">Смерть близкого человека всегда застает врасплох. Наши специалисты помогут справиться в трудную минуту и возьмут на себя решение множество проблем и вопросов, связанных с организацией похорон.</p>
+            <h2 class="card-title">Захоронение/Кремация</h2>
+            <p class="card-text"> Подробная информация о стоимости похорон или кремации.</p>
           </div>
           <div class="card-footer">
-            <a href="http://127.0.0.1:8000/products/urn/grave_urn/" class="btn btn-success">Узнать подробнее</a>
+            <a href="http://127.0.0.1:8000/info/" class="btn btn-success">Узнать подробнее</a>
           </div>
         </div>
-
       </div>
-      <div class="col-md-6 mb-5">
-
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
         <div class="card h-100">
-          <img class="card-img-top" src="https://sun9-61.userapi.com/impg/sWzd25bYx3Z7S04VKBlmeTIDCyPWYSHpusvwDw/adudZWLvLDQ.jpg?size=700x515&quality=96&sign=002f30c71c236167fcae21387d0a1015&type=album" alt="">
+          <img class="card-img-top" src="https://sun9-32.userapi.com/impg/m23BM1ssJrzL_BvziBe7fbuFcsPeGLWx8pSReQ/aC4eWj6oj2Q.jpg?size=640x480&quality=96&sign=1d235ec76968783c2f666bc94b7d910f&type=album" alt="">
           <div class="card-body">
-            <h4 class="card-title">Благоустройство</h4>
-            <p class="card-text">За местом захоронения близкого человека необходимо регулярно ухаживать, т.к. почва склонна к размыванию, а сорные растения имеют свойство разрастаться. Однако, не всегда близкие усопшего имеют возможность часто посещать могилку. Наши квалифицированные специалисты возьмут на себя ответственность по уходу и благоустройству захоронения.</p>
+            <h2 class="card-title">Услуги</h2>
+            <p class="card-text">	-Эвакуация в морг<br>
+	-Груз 200<br>
+	-Катафалк<br>
+	-Подготовка тела<br>
+	-Ритуальный зал<br>
+	-Эксгумация<br>
+	-Выезд агента<br>
+	-Оформление документов	<br>
+	-Организация поминания<br>
+	-Уход за захоронениями	<br>
+	<br></p>
           </div>
           <div class="card-footer">
-            <a href="http://127.0.0.1:8000/products/coffin/coffins/" class="btn btn-success">Узнать подробнее</a>
+            <a href="http://127.0.0.1:8000/services/" class="btn btn-success">Узнать подробнее</a>
           </div>
         </div>
-        {% endblock content %}
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://sun9-32.userapi.com/impg/m23BM1ssJrzL_BvziBe7fbuFcsPeGLWx8pSReQ/aC4eWj6oj2Q.jpg?size=640x480&quality=96&sign=1d235ec76968783c2f666bc94b7d910f&type=album" alt="">
+          <div class="card-body">
+            <h2 class="card-title">Ритуальные товары</h2>
+            <p class="card-text">	-Гробы<br>	-Кресты<br>	-Венки<br>
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:8000/items/" class="btn btn-success">Узнать подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+{% endblock content %}
       </div>
     </div>
 
 
-    <!-- /.row -->
-
-       <div class="row">
-      {% block content_2%}
-      <div class="col-md-6 mb-5">
-
-        <div class="card h-100">
-          <img class="card-img-top" src="https://sun9-32.userapi.com/impg/m23BM1ssJrzL_BvziBe7fbuFcsPeGLWx8pSReQ/aC4eWj6oj2Q.jpg?size=640x480&quality=96&sign=1d235ec76968783c2f666bc94b7d910f&type=album" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Захоронение</h4>
-            <p class="card-text">Смерть близкого человека всегда застает врасплох. Наши специалисты помогут справиться в трудную минуту и возьмут на себя решение множество проблем и вопросов, связанных с организацией похорон.</p>
-          </div>
-          <div class="card-footer">
-            <a href="http://127.0.0.1:8000/products/urn/grave_urn/" class="btn btn-success">Узнать подробнее</a>
-          </div>
-        </div>
-
-      </div>
-      <div class="col-md-6 mb-5">
-
-        <div class="card h-100">
-          <img class="card-img-top" src="https://sun9-61.userapi.com/impg/sWzd25bYx3Z7S04VKBlmeTIDCyPWYSHpusvwDw/adudZWLvLDQ.jpg?size=700x515&quality=96&sign=002f30c71c236167fcae21387d0a1015&type=album" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Благоустройство</h4>
-            <p class="card-text">За местом захоронения близкого человека необходимо регулярно ухаживать, т.к. почва склонна к размыванию, а сорные растения имеют свойство разрастаться. Однако, не всегда близкие усопшего имеют возможность часто посещать могилку. Наши квалифицированные специалисты возьмут на себя ответственность по уходу и благоустройству захоронения.</p>
-          </div>
-          <div class="card-footer">
-            <a href="http://127.0.0.1:8000/products/coffin/coffins/" class="btn btn-success">Узнать подробнее</a>
-          </div>
-        </div>
-        {% endblock content_2 %}
-      </div>
-    </div>
-    <!-- /.row -->
 
   </div>
   <!-- /.container -->
@@ -186,7 +182,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Ритуальное агенство "Вечность"<br>8(923)117-01-01</p>
     </div>
     <!-- /.container -->
   </footer>

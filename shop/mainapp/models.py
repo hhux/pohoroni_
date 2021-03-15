@@ -136,7 +136,7 @@ class Info(Product):
         return "{} : {}".format(self.category.name, self.title)
 
     def get_absolute_url(self):
-        return get_product_url(self, 'product_detail')
+        return get_product_url(self, 'info')
 
 
 class CartProduct(models.Model):
@@ -174,3 +174,4 @@ class Customer(models.Model):
         return "Покупатель {} {}".format(self.user.first_name, self.user.last_name)
 
 
+""""1"""
